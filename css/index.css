@@ -175,15 +175,22 @@ h3 {
   background: #4A64C6;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .container header nav a {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
 .container .top-content {
   background: lightgray;
   display: flex;
   padding: 1.5%;
   align-items: center;
+  justify-content: space-around;
 }
 .container .top-content .profile-pic {
   align-self: flex-start;
-  max-width: 50%;
+  max-width: 40%;
 }
 .container .top-content .text-box {
   display: flex;
@@ -192,8 +199,24 @@ h3 {
   flex-flow: column;
   align-items: flex-start;
 }
+@media (max-width: 800px) {
+  .container .top-content .text-box {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .container .top-content .text-box h1 {
+    font-size: 2rem;
+  }
+}
 .container .top-content .text-box h3 {
   margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .container .top-content .text-box h3 {
+    font-size: 1.4rem;
+  }
 }
 .container .top-content .text-box p {
   border-top: 1px solid black;
@@ -224,7 +247,7 @@ h3 {
 }
 .container .middle-content .text-box p {
   margin-top: 10px;
-  width: 80%;
+  width: 90%;
 }
 .container .middle-content .skills {
   color: #32292F;

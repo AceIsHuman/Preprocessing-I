@@ -113,6 +113,11 @@ h3 {
         background: @acct1;
         cursor: pointer;
       }
+
+      @media(max-width: 800px) {
+        font-size: 1rem;
+        padding: .8rem 1.5rem;
+      }
     }
   } 
 
@@ -121,10 +126,11 @@ h3 {
   .top-content {
     background: @background;
     .flex;
+    justify-content: space-around;
     
     .profile-pic {
       align-self: flex-start;
-      max-width: 50%;
+      max-width: 40%;
     }
     
     .text-box {
@@ -132,8 +138,23 @@ h3 {
       flex-flow: column;
       align-items: flex-start;
 
+      @media(max-width: 800px) {
+        align-items: center;
+        text-align: center;
+      }
+
+      h1 {
+        @media(max-width: 800px) {
+          font-size: 2rem;
+        }
+      }
+
       h3 {
         margin-bottom: 20px;
+
+        @media(max-width: 800px) {
+          font-size: 1.4rem;
+        }
       }
 
       p {
@@ -169,7 +190,7 @@ h3 {
 
       p {
         margin-top: 10px;
-        width: 80%;
+        width: 90%;
       }
     }
 
