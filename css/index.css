@@ -230,3 +230,14 @@ h3 {
   width: 25%;
   padding-left: 2%;
 }
+.container .bottom-content {
+  padding: 1.5%;
+}
+.container .bottom-content h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.container .bottom-content table {
+  color: #32292F;
+  font-family: 'Nunito', sans-serif;
+}
