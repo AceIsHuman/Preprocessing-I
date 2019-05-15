@@ -163,6 +163,11 @@ h3 {
   justify-content: flex-end;
   background: #6363CE;
 }
+@media (max-width: 500px) {
+  .container header nav {
+    justify-content: space-around;
+  }
+}
 .container header nav a {
   color: #32292F;
   font-family: 'Nunito', sans-serif;
@@ -188,9 +193,20 @@ h3 {
   align-items: center;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .container .top-content {
+    flex-direction: column;
+  }
+}
 .container .top-content .profile-pic {
   align-self: flex-start;
   max-width: 40%;
+}
+@media (max-width: 500px) {
+  .container .top-content .profile-pic {
+    align-self: center;
+    max-width: 60%;
+  }
 }
 .container .top-content .text-box {
   display: flex;

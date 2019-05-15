@@ -101,6 +101,10 @@ h3 {
     display: flex;
     justify-content: flex-end;
     background: @heading;
+
+    @media(max-width: 500px) {
+      justify-content: space-around;
+    }
     
     a {
       .text;
@@ -127,10 +131,19 @@ h3 {
     background: @background;
     .flex;
     justify-content: space-around;
+
+    @media(max-width: 500px) {
+      flex-direction: column;
+    }
     
     .profile-pic {
       align-self: flex-start;
       max-width: 40%;
+
+      @media(max-width: 500px) {
+        align-self: center;
+        max-width: 60%
+      }
     }
     
     .text-box {
