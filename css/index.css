@@ -227,6 +227,8 @@ h3 {
   width: 80%;
 }
 .container .middle-content .skills {
+  color: #32292F;
+  font-family: 'Nunito', sans-serif;
   width: 25%;
   padding-left: 2%;
 }
@@ -238,6 +240,29 @@ h3 {
   border-bottom: 1px solid black;
 }
 .container .bottom-content table {
+  margin-top: 10px;
   color: #32292F;
   font-family: 'Nunito', sans-serif;
+}
+.container .contact {
+  padding: 1.5%;
+}
+.container .contact h3 {
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.container .contact p {
+  margin-top: 10px;
+}
+.container .contact p:last-child {
+  margin-bottom: 50px;
+}
+.container .footer {
+  display: flex;
+  padding: 1.5%;
+  align-items: center;
+  padding: 1rem;
+  background: lightgray;
+  justify-content: center;
 }
