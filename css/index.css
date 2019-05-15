@@ -158,12 +158,12 @@ h3 {
   max-width: 1080px;
   margin: 0 auto;
 }
-header nav {
+.container header nav {
   display: flex;
   justify-content: flex-end;
   background: #6363CE;
 }
-header nav a {
+.container header nav a {
   color: #32292F;
   font-family: 'Nunito', sans-serif;
   font-size: 1.2rem;
@@ -171,32 +171,35 @@ header nav a {
   text-decoration: none;
   color: #D1E3DD;
 }
-header nav a:hover {
+.container header nav a:hover {
   background: #4A64C6;
   cursor: pointer;
 }
-.top-content {
+.container .top-content {
   background: lightgray;
   display: flex;
   padding: 1.5%;
   align-items: center;
 }
-.top-content .profile-pic {
+.container .top-content .profile-pic {
   align-self: flex-start;
   max-width: 50%;
 }
-.top-content .text-box {
+.container .top-content .text-box {
   display: flex;
   padding: 1.5%;
   align-items: center;
   flex-flow: column;
   align-items: flex-start;
 }
-.top-content .text-box p {
+.container .top-content .text-box h3 {
+  margin-bottom: 20px;
+}
+.container .top-content .text-box p {
   border-top: 1px solid black;
   padding: 20px 0;
 }
-.top-content .text-box button {
+.container .top-content .text-box button {
   color: #32292F;
   font-family: 'Nunito', sans-serif;
   background: #6363CE;
@@ -204,4 +207,26 @@ header nav a:hover {
   padding: 0.5rem;
   border: none;
   border-radius: 5px;
+}
+.container .middle-content {
+  display: flex;
+  padding: 1.5%;
+  align-items: center;
+  align-items: flex-start;
+}
+.container .middle-content .text-box {
+  width: 73%;
+  padding-right: 2%;
+}
+.container .middle-content .text-box h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.container .middle-content .text-box p {
+  margin-top: 10px;
+  width: 80%;
+}
+.container .middle-content .skills {
+  width: 25%;
+  padding-left: 2%;
 }
