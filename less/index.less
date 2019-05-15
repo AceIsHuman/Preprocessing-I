@@ -1,3 +1,9 @@
+@heading: #6363CE;
+@background: lightgray;
+@text: #32292F;
+@acct1: #4A64C6;
+@acct2: #D1E3DD;
+
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,6 +60,91 @@ table {
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
+  background: @acct2;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  .text;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.text() {
+  color: @text;
+  font-family: 'Nunito', sans-serif;
+}
+
+.flex() {
+  display: flex;
+  padding: 1.5%;
+  align-items: center;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+// HEADER
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  background: @heading;
+  
+  a {
+    .text;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: @acct2;
+    
+    &:hover {
+      background: @acct1;
+      cursor: pointer;
+    }
+  }
+} 
+
+//.TOP-CONTENT
+
+.top-content {
+  background: @background;
+  .flex;
+  
+  .profile-pic {
+    align-self: flex-start;
+    max-width: 50%;
+  }
+  
+  .text-box {
+    .flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    p {
+      border-top: 1px solid black;
+      padding: 20px 0;
+    }
+
+    button {
+      .text;
+      background: @heading;
+      color: @acct2;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
